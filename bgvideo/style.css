@@ -1,0 +1,338 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.videos {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.videos video {
+  width: 100%;
+  z-index: -1;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.273);
+}
+.container .audio_box {
+  position: absolute;
+  width: 300px;
+  height: 474px;
+  background-color: rgba(3, 3, 4, 0.58);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.container .audio_box .audio_img_box {
+  width: 100%;
+  height: 269px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .audio_box .audio_img_box .audio_img {
+  width: 236px;
+  height: 236px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+.container .audio_box .audio_controls span {
+  display: flex;
+  justify-content: space-between;
+  width: 262px;
+  margin: 10px auto;
+}
+.container .audio_box .audio_controls span .after {
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.644);
+  margin: 0;
+}
+.container .audio_box .audio_controls span .time {
+  color: white;
+}
+.container .audio_box .audio_controls .audio_block {
+  width: 260px;
+  height: 4px;
+  background-color: none;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 21px;
+  background-color: chartreuse;
+}
+.container .audio_box .audio_controls .audio_block audio {
+  width: 503px;
+  height: 4px;
+  position: absolute;
+  left: -48px;
+}
+.container .audio_box .audio_controls .boshqaruv {
+  width: 254px;
+  display: flex;
+  margin: 20px auto;
+  justify-content: space-between;
+}
+.container .audio_box .audio_controls .boshqaruv div {
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  background-size: 140px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.container .audio_box .audio_controls .boshqaruv div:active {
+  transform: scale(0.8);
+}
+.container .audio_box .audio_controls .ovoz {
+  display: flex;
+  width: 250px;
+  margin: 0 auto;
+}
+.container .audio_box .audio_controls .ovoz .ovoz_img {
+  width: 50px;
+  height: 50px;
+  background-image: url("/images/ei_1673719940127-removebg-preview.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pause {
+  background-image: url("/images/stop.png");
+}
+
+.oldinga {
+  background-image: url("/images/ong.png");
+}
+
+.orqaga {
+  background-image: url("/images/chap.png");
+}
+
+.start {
+  background-image: url("/images/start.png");
+}
+
+.hidden {
+  display: none !important;
+}
+
+output {
+  color: white;
+}
+
+.img0 {
+  background-image: url("/audio_images/1.jpeg");
+}
+
+.img1 {
+  background-image: url("/audio_images/2.PNG");
+}
+
+.img2 {
+  background-image: url("/audio_images/3.jpeg");
+}
+
+.img3 {
+  background-image: url("/audio_images//4.jpeg");
+}
+
+.img4 {
+  background-image: url("/audio_images/18.jpeg");
+}
+
+.img5 {
+  background-image: url("/audio_images/6.jpeg");
+}
+
+.img6 {
+  background-image: url("/audio_images/7.jpeg");
+}
+
+.img7 {
+  background-image: url("/audio_images/8.jpeg");
+}
+
+.img8 {
+  background-image: url("/audio_images/9.jpeg");
+}
+
+.img9 {
+  background-image: url("/audio_images/10.jpeg");
+}
+
+.img10 {
+  background-image: url("/audio_images/11.jpeg");
+}
+
+.img11 {
+  background-image: url("/audio_images/12.jpeg");
+}
+
+.img12 {
+  background-image: url("/audio_images/13.jpeg");
+}
+
+.img13 {
+  background-image: url("/audio_images/14.png");
+}
+
+.img14 {
+  background-image: url("/audio_images/15.jpeg");
+}
+
+.img15 {
+  background-image: url("/audio_images/16.jpeg");
+}
+
+.img16 {
+  background-image: url("/audio_images/17.jpeg");
+}
+
+.img17 {
+  background-image: url("/audio_images/18.jpeg");
+}
+
+.img18 {
+  background-image: url("/audio_images/19.jpeg");
+}
+
+.img19 {
+  background-image: url("/audio_images/20.PNG");
+}
+
+.img20 {
+  background-image: url("/audio_images/6.jpeg");
+}
+
+@-webkit-keyframes dick {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(36000deg);
+  }
+}
+
+@keyframes dick {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(36000deg);
+  }
+}
+.animo {
+  -webkit-animation: dick 2500s linear infinite alternate;
+          animation: dick 2500s linear infinite alternate;
+}
+
+@media (max-width: 1184px) {
+  .videos {
+    position: relative;
+    overflow: hidden;
+  }
+  .videos video {
+    height: 100vh;
+    position: absolute;
+    transform: scale(1.3);
+  }
+}
+@media (max-width: 910px) {
+  .videos {
+    position: relative;
+    overflow: hidden;
+  }
+  .videos video {
+    width: auto;
+    height: 100vh;
+    position: absolute;
+    transform: scale(1.5);
+  }
+}
+@media (max-width: 430px) {
+  .videos {
+    position: relative;
+    overflow: hidden;
+  }
+  .videos video {
+    width: auto;
+    height: 100vh;
+    position: absolute;
+    transform: scale(1);
+  }
+  .container {
+    width: 100%;
+    height: 100vh;
+  }
+  .container .audio_box {
+    width: 250px;
+    height: 374px;
+    overflow: hidden;
+  }
+  .container .audio_box .audio_img_box {
+    width: 100%;
+    height: 190px;
+  }
+  .container .audio_box .audio_img_box .audio_img {
+    width: 172px;
+    height: 172px;
+    opacity: 0.7;
+  }
+  .container .audio_box .audio_controls span {
+    width: 210px;
+    margin: 10px auto;
+  }
+  .container .audio_box .audio_controls span .after {
+    font-size: 14px;
+  }
+  .container .audio_box .audio_controls span .time {
+    font-size: 14px;
+  }
+  .container .audio_box .audio_controls .audio_block {
+    width: 206px;
+    height: 4px;
+    overflow: hidden;
+  }
+  .container .audio_box .audio_controls .audio_block audio {
+    width: 447px;
+    height: 4px;
+    left: -48px;
+  }
+  .container .audio_box .audio_controls .boshqaruv {
+    width: 210px;
+  }
+  .container .audio_box .audio_controls .boshqaruv div {
+    width: 50px;
+    height: 50px;
+    background-size: 125px;
+  }
+  .container .audio_box .audio_controls .ovoz {
+    width: 197px;
+  }
+  .container .audio_box .audio_controls .ovoz .ovoz_img {
+    width: 51px;
+    height: 51px;
+    background-size: 62px;
+  }
+}/*# sourceMappingURL=style.css.map */

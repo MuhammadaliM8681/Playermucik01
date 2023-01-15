@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="videos">
+        <!-- orqa fon videolar -->
+        <video src="/video/v1.mp4" autoplay loop ></video>
+    </div>
+
+    <div class="container">
+        <div class="audio_box">
+            <div class="audio_img_box">
+                <div class="audio_img img0"></div>
+            </div>
+            <div class="audio_controls">
+                <span>
+                    <p class="after">Music Player</p>
+                    <div class="time">00:00 / 3:30</div>
+                </span>
+                <div class="audio_block">
+                    <audio src="/music/0.mp3" controls  ></audio>
+                </div>
+                <div class="boshqaruv">
+                    <div class="orqaga"></div>
+                    <div class="pause hidden"></div>
+                    <div class="start "></div>
+                    <div class="oldinga"></div>
+                </div>
+                <div class="ovoz">
+                    <div class="ovoz_img"></div>
+                    <input type="range" min ="0" max="10" step="any">
+                    <p class="vol"> <output></output></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- js -->
+    <script src="app.js"></script>
+</body>
+</html>
